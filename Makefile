@@ -1,6 +1,6 @@
 container_name     := telegraf
 container_registry := quay.io/nordstrom
-container_release  := 1.3.0-1
+container_release  := 1.3.4-1
 
 .PHONY: build/image tag/image push/image
 
