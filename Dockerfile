@@ -2,6 +2,7 @@ FROM golang:1.8
 
 WORKDIR /go/src/github.com/influxdata/telegraf
 RUN git clone https://github.com/dylanmei/telegraf /go/src/github.com/influxdata/telegraf \
+ && git checkout jolokia2 \
  && make \
  && mkdir -p /etc/telegraf/telegraf.d \
  && cp etc/*.conf /etc/telegraf/ \
