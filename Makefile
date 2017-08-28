@@ -1,6 +1,6 @@
 container_name     := telegraf
 container_registry := quay.io/nordstrom
-container_release  := 1.3.5-1
+container_release  := 1.4.0-1
 
 build:
 	docker build \

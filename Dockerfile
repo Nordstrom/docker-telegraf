@@ -6,7 +6,7 @@ RUN git clone https://github.com/dylanmei/telegraf /go/src/github.com/influxdata
  && make \
  && mkdir -p /etc/telegraf/telegraf.d \
  && cp etc/*.conf /etc/telegraf/ \
- && cp $GOPATH/bin/telegraf /usr/bin/ \
+ && cp telegraf /usr/bin/ \
  && rm -rf /go/src/github.com
 
 WORKDIR /
